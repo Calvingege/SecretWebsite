@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\addsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,22 @@ Route::get('/home', function() {
     return view('Home');
     })->name('Home');
 
-Route::get('/purchase', function() {
-    return view('purchaseSapi');
-    })->name('purchaseSapi');
+// Jadi setelah beli sapi langsung dikasih unjuk aja sapi nya yang gimana
+Route::put(
+    '/purchase/sapi',
+    [addsController::class, 'StoreSapi']
+    )->name('StoreSapi');
+
+Route::post(
+    '/create/adds',
+    [addsController::class, 'CreateAdds']
+    )->name('CreateAdds');
+
+Route::get('/selesai', function() {
+    return view('Finish');
+    })->name('Finish');
+
+Route::post(
+    '/store/adds',
+    [addsController::class, 'StoreAdds']
+    )->name('StoreAdds');
