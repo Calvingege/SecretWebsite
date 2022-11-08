@@ -28,7 +28,7 @@ class addsController extends Controller
         'NamaSapi' => $request->NamaSapi,
         'HargaSapi' => $request->HargaSapi,
         'JenisSapi' => $request->JenisSapi,
-        'FotoBarang' => $fileName
+        'FotoSapi' => $fileName
     ]);
 
         // Setelah pasang iklan dia ngereturn lagi ke create/adds
