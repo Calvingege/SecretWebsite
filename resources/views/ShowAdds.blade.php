@@ -20,7 +20,7 @@
             <b>Beli Sapi Disini Woiii</b>
         </h1>
     </div>
-    <form action="{{route('StoreSapi')}}" method="POST" enctype="multipart/form-data">
+    <form action="{{route('StorePurchase')}}" method="POST" enctype="multipart/form-data">
     @csrf
     <div class="mb-3">
     @foreach ($Adds as $Adds)

@@ -34,6 +34,7 @@
           <input type="text" class="form-control" id="HargaSapi" name="HargaSapi">
         </div>
 
+        <!-- Upload gambar -->
         <div class="mb-3">
             <label for="FotoSapi" class="form-label">Foto Sapi</label>
             <input type="file" class="form-control" id="picture" name="FotoSapi">

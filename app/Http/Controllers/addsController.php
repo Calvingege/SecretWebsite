@@ -8,13 +8,14 @@ use Illuminate\Http\Request;
 class addsController extends Controller
 {
     // Bagian Create Adds
-    public function createAdds(){
-        return('createAdds');
+    public function CreateAdds(){
+        return view('CreateAdds');
     }
 
     // Bagian Store Adds
     public function StoreAdds(Request $request) {
         $extension = $request->file('FotoSapi')->getClientOriginalExtension();
+        // $table->string('FotoSapi')->nullable();
         $fileName = $request->Kategori.'_'.$request->NamaSapi.'.'.$extension;
         $request->file('FotoSapi')->storeAs('public/image', $fileName);
 
@@ -34,8 +35,12 @@ class addsController extends Controller
         return redirect('create/adds');
     }
 
-    public function showAdds() {
+
+    // Tunjukin iklannya
+    public function ShowAdds() {
         $Adds = Adds::all();
         return view('ShowAdds', compact('Adds'));
     }
+
+    
 }

@@ -5,15 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Adds extends Model
+class purchase extends Model
 {
-    public $timestamps = false;
     use HasFactory;
 
     protected $fillable = [
-        'NamaSapi',
-        'HargaSapi',
-        'JenisSapi',
         'FotoSapi'
     ];
 }
