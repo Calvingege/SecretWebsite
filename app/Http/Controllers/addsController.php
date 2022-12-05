@@ -17,7 +17,7 @@ class addsController extends Controller
         $extension = $request->file('FotoSapi')->getClientOriginalExtension();
         // $table->string('FotoSapi')->nullable();
         $fileName = $request->Kategori.'_'.$request->NamaSapi.'.'.$extension;
-        $request->file('FotoSapi')->storeAs('public/image', $fileName);
+        $request->file('FotoSapi')->storeAs('public/image', $fileName);    
 
     // Bagian Input Validasi
     $request->validate([
@@ -42,5 +42,4 @@ class addsController extends Controller
         return view('ShowAdds', compact('Adds'));
     }
 
-    
 }

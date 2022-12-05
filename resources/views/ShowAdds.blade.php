@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>purchaseSapi</title>
+    <title>show adds</title>
     <link 
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -20,11 +20,20 @@
             <b>Beli Sapi Disini Woiii</b>
         </h1>
     </div>
-    <form action="{{route('StorePurchase')}}" method="POST" enctype="multipart/form-data">
+    <form action="{{route('CreatePayment')}}" method="GET" enctype="multipart/form-data">
     @csrf
     <div class="mb-3">
     @foreach ($Adds as $Adds)
+    <!-- Foto Sapi -->
         <img src="{{asset('/storage/image/' .$Adds->FotoSapi)}}" alt="FotoSapi" width="300" height="200">
+    <!-- Nama Sapi  -->
+        <p>Nama Sapi: {{$Adds->NamaSapi}}</p>
+    <!-- jenis sapi  -->
+        <p>Jenis Sapi: {{$Adds->JenisSapi}}</p>
+    <!-- Harga Sapi -->
+        <p>Harga Sapi: {{$Adds->HargaSapi}}</p>
+    <!-- Button -->
+    <button type="submit" class="btn btn-primary">Beli Sapi</button>
     @endforeach
     </div>
 </body>

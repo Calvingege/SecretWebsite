@@ -1,7 +1,9 @@
 <?php
+require __DIR__.'/auth.php';
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\addsController;
+use App\Http\Controllers\paymentController;
 use App\Http\Controllers\purchasecontroller;
 
 /*
@@ -14,6 +16,14 @@ use App\Http\Controllers\purchasecontroller;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/', function () {
     return view('welcome');
@@ -35,11 +45,22 @@ Route::get(
     [addsController::class, 'CreateAdds']
     )->name('CreateAdds');
 
+// Bagian Pembayaran disini 
+Route::get(
+    '/create/payment',
+    [paymentController::class, 'CreatePayment']
+    )->name('CreatePayment');
+
+// bagian nunjukin pembayaran 
+Route::get(
+    '/show/payment',
+    [paymentController::class, 'ShowPayment']
+    )->name('ShowPayment');
+
+// Bagian final / selesainya disini
 Route::get('/selesai', function() {
     return view('Finish');
     })->name('Finish');
-
-
 
 // Bagian post 
 Route::post(
@@ -48,6 +69,6 @@ Route::post(
     )->name('StoreAdds');
 
 Route::post(
-    '/store/purchase',
-    [addsController::class, 'StorePurchase']
-    )->name('StorePurchase');
+    '/store/payment',
+    [paymentController::class, 'StorePayment']
+    )->name('StorePayment');
