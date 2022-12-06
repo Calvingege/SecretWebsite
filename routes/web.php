@@ -1,10 +1,11 @@
 <?php
-require __DIR__.'/auth.php';
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\addsController;
 use App\Http\Controllers\paymentController;
+use App\Http\Middleware\AdminMiddleware;
 
+require __DIR__.'/auth.php';
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -42,7 +43,7 @@ Route::get(
 Route::get(
     '/create/adds',
     [addsController::class, 'CreateAdds']
-    )->middleware('admin');
+    )->middleware([AdminMiddleware::class, 'AdminMiddleware'])->name('CreateAdds');
 
 // Bagian Pembayaran disini 
 Route::get(
@@ -54,7 +55,7 @@ Route::get(
 Route::get(
     '/show/payment',
     [paymentController::class, 'ShowPayment']
-    )->middleware('admin');
+    )->middleware([AdminMiddleware::class, 'AdminMiddleware'])->name('ShowPayment');
 
 // Bagian final / selesainya disini
 Route::get('/selesai', function() {
