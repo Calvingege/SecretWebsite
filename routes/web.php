@@ -4,7 +4,6 @@ require __DIR__.'/auth.php';
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\addsController;
 use App\Http\Controllers\paymentController;
-use App\Http\Controllers\purchasecontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,11 +38,11 @@ Route::get(
     [addsController::class, 'ShowAdds']
     )->name('ShowAdds');
 
-// Bikin iklan disini
+// Bikin iklan disini, Cuma bisa diakses oleh admin 
 Route::get(
     '/create/adds',
     [addsController::class, 'CreateAdds']
-    )->name('CreateAdds');
+    )->middleware('admin');
 
 // Bagian Pembayaran disini 
 Route::get(
@@ -51,11 +50,11 @@ Route::get(
     [paymentController::class, 'CreatePayment']
     )->name('CreatePayment');
 
-// bagian nunjukin pembayaran 
+// bagian nunjukin pembayaran, cuma bisa diakses oleh admin. 
 Route::get(
     '/show/payment',
     [paymentController::class, 'ShowPayment']
-    )->name('ShowPayment');
+    )->middleware('admin');
 
 // Bagian final / selesainya disini
 Route::get('/selesai', function() {
