@@ -16,13 +16,16 @@
 
 <!-- Navbar -->
 <nav id="navbar-example2" class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="#">Secret Website</a>
+  <a class="navbar-brand" href="#">Sapi Pink</a>
   <ul class="nav nav-pills">
     <li class="nav-item">
-      <a class="nav-link" href="#purchasesapi">pembelian sapi</a>
+      <a class="nav-link" href="/purchase/sapi">pembelian sapi</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#mdo">Category Sapi</a>
+      <a class="nav-link" href="/login">Account</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="">contact admin</a>
   </ul>
 </nav>
 <!-- End Of Navbar -->
@@ -32,7 +35,7 @@
   <h4 id="fat">@purchasesapi</h4>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem.
   <!-- To do, bikin halaman purchaseSapi -->
-  <a href="/purchase">PurchaseHere</a>
+  <a href="/purchase/sapi">PurchaseHere</a>
   </p>
 
   <h4 id="mdo">@mdo</h4>

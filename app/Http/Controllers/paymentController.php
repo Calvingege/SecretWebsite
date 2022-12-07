@@ -14,9 +14,16 @@ class paymentController extends Controller
 
     // Bagian Store Adds
     public function StorePayment(Request $request) {
-        $image= $request->file('BuktiPembayaran')->getClientOriginalExtension();
-        $fileName = '_'.$request->BuktiPembayaran.'.'.$image;
-        $request->file('BuktiPembayaran')->storeAs('public/image', $image);
+        // $extension= $request->file('BuktiPembayaran')->getClientOriginalExtension();
+        // $fileName = $request->Kategori.'_'.$request->BuktiPembayaran.'.'.$extension;
+        // $request->file('BuktiPembayaran')->storeAs('public/image', $fileName);
+
+    // masih error: dia nyimpennya di PATH dan gabisa dipanggil
+    $file = $request->file('BuktiPembayaran');
+    $destinationPath = public_path(). '/public/image';
+    $filename = $file->getClientOriginalName();
+
+    $request->file('BuktiPembayaran')->move($destinationPath, $filename);
 
     // Bagian Input Validasi
     $request->validate([
@@ -24,7 +31,7 @@ class paymentController extends Controller
     ]);
 
     payment::create([
-        'BuktiPembayaran' => $fileName
+        'BuktiPembayaran' => $filename
     ]);
 
         // Setelah pasang iklan dia ngereturn lagi ke create/adds

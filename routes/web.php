@@ -43,7 +43,12 @@ Route::get(
 Route::get(
     '/create/adds',
     [addsController::class, 'CreateAdds']
-    )->middleware([AdminMiddleware::class, 'AdminMiddleware'])->name('CreateAdds');
+    )->middleware([AdminMiddleware::class])->name('CreateAdds');
+
+// hanya admin yang bisa masuk sini hahahah
+Route::get('/admin', function() {
+    return view('admin');
+    })->name('admin');
 
 // Bagian Pembayaran disini 
 Route::get(
@@ -55,7 +60,7 @@ Route::get(
 Route::get(
     '/show/payment',
     [paymentController::class, 'ShowPayment']
-    )->middleware([AdminMiddleware::class, 'AdminMiddleware'])->name('ShowPayment');
+    )->middleware([AdminMiddleware::class])->name('ShowPayment');
 
 // Bagian final / selesainya disini
 Route::get('/selesai', function() {

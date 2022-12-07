@@ -19,10 +19,13 @@
         </h1>
     </div>
 
+    <form action="" method="GET" enctype="multipart/form-data">
+    @csrf
     <div class="mb-3">
     @foreach ($payment as $payment)
     <!-- Foto Sapi -->
         <img src="{{asset('storage/image/' .$payment->BuktiPembayaran)}}" alt="BuktiPembayaran" width="300" height="200">
     @endforeach
+    </div>
 </body>
 </html>

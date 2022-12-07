@@ -36,6 +36,7 @@
             <br>
         <!-- Button -->
         <button type="submit" class="btn btn-primary">Selesai</button>
+        <a href="../home">Return to home</a>
         </div>
 </Form>
 </body>

@@ -44,6 +44,8 @@
             <br>
         <!-- Button -->
         <button type="submit" class="btn btn-primary">Pasang Iklan</button>
+        <br>
+        <a href="../purchase/sapi">lihat ilkan</a>
         </div>
     </form>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
