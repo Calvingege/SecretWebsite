@@ -27,5 +27,6 @@
         <img src="{{asset('storage/image/' .$payment->BuktiPembayaran)}}" alt="BuktiPembayaran" width="300" height="200">
     @endforeach
     </div>
+    </form>
 </body>
 </html>
