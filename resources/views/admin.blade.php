@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selamat</title>
@@ -13,8 +13,8 @@
 </head>
 <body>
     <!-- Navbar -->
-<nav id="navbar-example2" class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="#">Sapi Pink</a>
+<nav id="navbar-example2" class="navbar navbar-light bg-dark">
+  <p class="navbar-brand text-light" href="#" >Sapi Pink</p>
   <ul class="nav nav-pills">
     <li class="nav-item">
       <a class="nav-link" href="/purchase/sapi">pembelian sapi</a>
@@ -29,18 +29,23 @@
 <!-- End Of Navbar -->
 
 
-    <div class="text-center">
-        <h1><b>Anda Admin ya? semoga anda bukan heker</b></h1>
+    <div class="text-center bg-secondary ">
+        <h3><b>Kamu admin bukan ya? Kamu nanya?</b></h3>
+        <h4>Jika benar kamu admin kamu bisa menggunakan fitur berikut ini
+        <br>
+        <a href="./create/adds" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Pasang iklan</a>
+        <!-- <br> -->
+        <a href="./show/payment" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Liat hasil Pembayaran</a>
+        <!-- <br> -->
+        <a href="./purchase/sapi" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">lihat iklan</a>
+        </h4> 
+
         <video width="900" height="600" controls>
             <source src="/Movie.mp4" type="video/mp4">
         </video>
         <br>
-        <p>Jika benar anda admin anda bisa menggunakan kedua fitur tersebut:</p> 
-        <a href="./create/adds">Pasang iklan</a>
-        <br>
-        <a href="./show/payment">Liat hasil Pembayaran</a>
-        <br>
-        <a href="./purchase/sapi">lihat iklan</a>
+    </div>
+</body>
     </div>
 </body>
 </html>

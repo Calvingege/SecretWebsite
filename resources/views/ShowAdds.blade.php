@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>show adds</title>
@@ -15,17 +15,18 @@
 <body>
     <!-- Contoh -->
 
-    <div class="text-center">
+    <div class="text-light bg-dark">
         <h1>
             <b>Beli Sapi Disini Woiii</b>
         </h1>
     </div>
     <form action="{{route('CreatePayment')}}" method="GET" enctype="multipart/form-data">
     @csrf
-    <div class="mb-3">
+    <div class="mb-3 bg-secondary flex-column border border-dark">
     @foreach ($Adds as $Adds)
     <!-- Foto Sapi -->
-        <img src="{{asset('/storage/image/' .$Adds->FotoSapi)}}" alt="FotoSapi" width="300" height="200">
+    <br> <br>
+        <img src="{{asset('app/public/image/' .$Adds->FotoSapi)}}" alt="FotoSapi" width="300" height="200">
     <!-- Nama Sapi  -->
         <p>Nama Sapi: {{$Adds->NamaSapi}}</p>
     <!-- jenis sapi  -->

@@ -16,7 +16,10 @@
 
 <!-- Navbar -->
 <nav id="navbar-example2" class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="#">Sapi Pink</a>
+  <a class="navbar-brand" href="#">SapiPink@myclub.com 
+  <img src="./logosapi.jpg" width="100px" height="90px">
+  </a>
+  
   <ul class="nav nav-pills">
     <li class="nav-item">
       <a class="nav-link" href="/purchase/sapi">pembelian sapi</a>
@@ -32,16 +35,27 @@
 
 
 <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-  <h4 id="fat">@purchasesapi</h4>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem.
+
+  <img src="./sapipink.jpg" alt="" srcset="" width="300px" height="300px">
+  <img src="./SapiDuduk2.jpg" alt="" srcset="" width="300px" height="300px">
+  <img src="./sapicokelat.jpg" alt="" srcset="" width="300px" height="300px">
+  <br> 
+  <p>Selamat datang di website sapipink. Silahkan pilih sapi kesuakaan anda</p>
+  <!-- <br> -->
+  <h4 id="">Purchase Sapi</h4>
+  <p> Kalian dapat membeli sapi melalui website ini. 
   <!-- To do, bikin halaman purchaseSapi -->
   <a href="/purchase/sapi">PurchaseHere</a>
   </p>
 
-  <h4 id="mdo">@mdo</h4>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tenetur, dignissimos illo ipsam neque similique quibusdam magni suscipit aspernatur, enim libero, culpa voluptatum veniam. Culpa nihil non quo cum laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem.</p>
-  <h4 id="one">Paragraph</h4>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt totam voluptate voluptates rerum in, optio veritatis illum exercitationem debitis praesentium sequi necessitatibus eveniet reprehenderit repellendus alias voluptatem corporis pariatur non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit sint iusto, quibusdam eligendi cupiditate dolore provident nisi quia delectus earum a libero. Labore excepturi, reiciendis id odio at voluptatem.</p>
+  <h4 id="">About Us</h4>
+  <p>
+    Kami menjual berbagai macam dan jenis sapi. Selain itu sapi nya juga berkualitas
+  </p>
+  <h4 id="">Cabang</h4>
+  <p>
+    Cabang kami ada banyak deh intinya wkkw.
+  </p>
 </div>
 
 

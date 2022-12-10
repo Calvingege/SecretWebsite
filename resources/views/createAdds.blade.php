@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -14,11 +14,12 @@
 </head>
 <body>
     <!-- Bagian Create -->
-    <form class="p-5" action="{{route('StoreAdds')}}" method="POST"
+    <form class="p-5 text-light bg-dark" action="{{route('StoreAdds')}}" method="POST"
     enctype="multipart/form-data">
     @csrf
         <div class="mb-3">
-        <h1><b>Pasang Ikan Sapi Disini</b></h1>
+        <h1><b>Pasang Iklan Sapi Disini</b></h1>
+        </div>
         <div class="mb-3">
           <label for="NamaSapi" class="form-label">Nama Sapi</label>
           <input type="text" class="form-control" id="NamaSapi" name="NamaSapi">
@@ -43,10 +44,13 @@
             @enderror
             <br>
         <!-- Button -->
-        <button type="submit" class="btn btn-primary">Pasang Iklan</button>
-        <br>
-        <a href="../purchase/sapi">lihat ilkan</a>
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <button type="submit" class="btn btn-primary ">Pasang Iklan</button>
+          <br>
+          <a href="../purchase/sapi" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">lihat iklan</a>
         </div>
+      </div>
+      <br><br><br><br>
     </form>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38
