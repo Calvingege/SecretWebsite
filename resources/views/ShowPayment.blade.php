@@ -13,18 +13,18 @@
     />
 </head>
 <body>
-    <div class="text-center">
+    <div class="text-center text-light bg-dark">
         <h1>
-            <b>List Bukti Pembayaran</b>
+            <div>List Bukti Pembayaran</div>
         </h1>
     </div>
 
     <form action="" method="GET" enctype="multipart/form-data">
     @csrf
-    <div class="mb-3">
+    <div class="mb-3 bg-secondary d-flex flex-column align-items-center justify-content-center border border-dark">
     @foreach ($payment as $payment)
     <!-- Foto Sapi -->
-        <img src="{{asset('storage/image/' .$payment->BuktiPembayaran)}}" alt="BuktiPembayaran" width="300" height="200">
+        <img src="{{asset('app/public/image/' .$payment->BuktiPembayaran)}}" alt="BuktiPembayaran" width="300" height="200">
     @endforeach
     </div>
     </form>

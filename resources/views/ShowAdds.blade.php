@@ -15,17 +15,17 @@
 <body>
     <!-- Contoh -->
 
-    <div class="text-center">
+    <div class="text-center text-light bg-dark">
         <h1>
             <b>Beli Sapi Disini Woiii</b>
         </h1>
     </div>
     <form action="{{route('CreatePayment')}}" method="GET" enctype="multipart/form-data">
     @csrf
-    <div class="mb-3">
+    <div class="mb-3 bg-secondary d-flex flex-column align-items-center justify-content-center border border-dark">
     @foreach ($Adds as $Adds)
     <!-- Foto Sapi -->
-        <img src="{{asset('/storage/image/' .$Adds->FotoSapi)}}" alt="FotoSapi" width="300" height="200">
+        <img src="{{asset('app/public/image/' .$Adds->FotoSapi)}}" alt="FotoSapi" width="300" height="200">
     <!-- Nama Sapi  -->
         <p>Nama Sapi: {{$Adds->NamaSapi}}</p>
     <!-- jenis sapi  -->
